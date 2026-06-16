@@ -1,16 +1,33 @@
-# React + Vite
+# react-starter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal React + Tailwind starter. Clone and build.
 
-Currently, two official plugins are available:
+## What's inside
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Vite + React
+- Tailwind CSS v4
+- ESLint (flat config) + Prettier
+- Absolute imports (`@/`)
+- Folder structure ready to go
 
-## React Compiler
+## Usage
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npx degit arcanesandip/react-starter my-new-project
+cd my-new-project
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Folder structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── assets/
+├── components/
+│   └── ui/
+├── hooks/
+├── layouts/
+├── pages/
+└── utils/
+```
