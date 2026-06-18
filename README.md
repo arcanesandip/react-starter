@@ -12,11 +12,28 @@ Personal React + Tailwind starter. Clone and build.
 
 ## Usage
 
+**New project:**
 ```bash
 npx degit arcanesandip/react-starter my-new-project
 cd my-new-project
 npm install
 npm run dev
+```
+
+**Existing repo/folder:**
+
+> ⚠️ Make sure your folder is empty or all important files are committed to Git before running. degit will overwrite any conflicting files.
+
+```bash
+npx degit arcanesandip/react-starter .
+npm install
+npm run dev
+```
+
+If the folder is not empty and you still want to proceed:
+
+```bash
+npx degit arcanesandip/react-starter . --force
 ```
 
 ## Folder structure
