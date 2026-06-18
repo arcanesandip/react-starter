@@ -20,6 +20,8 @@ npm install
 npm run dev
 ```
 
+> Update `"name"` in `package.json` and `package-lock.json` to your project name.
+
 **Existing repo/folder:**
 
 > ⚠️ Make sure your folder is empty or all important files are committed to Git before running. degit will overwrite any conflicting files.
@@ -35,6 +37,8 @@ If the folder is not empty and you still want to proceed:
 ```bash
 npx degit arcanesandip/react-starter . --force
 ```
+
+> Update `"name"` in `package.json` and `package-lock.json` to your project name.
 
 ## Folder structure
 
