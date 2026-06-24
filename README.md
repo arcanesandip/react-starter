@@ -24,21 +24,27 @@ npm run dev
 
 **Existing repo/folder:**
 
-> ⚠️ Make sure your folder is empty or all important files are committed to Git before running. degit will overwrite any conflicting files.
+> ⚠️ `--force` will overwrite any conflicting files in the folder. Make sure all important files are committed to Git before running.
 
 ```bash
-npx degit arcanesandip/react-starter .
+npx degit arcanesandip/react-starter . --force
 npm install
 npm run dev
 ```
 
-If the folder is not empty and you still want to proceed:
+> Update `"name"` in `package.json` and `package-lock.json` to your project name.
+
+## Environment variables
+
+`.env.example` is committed to the repo — it has the variable names but no real values. It's just a template.
+
+Copy it to `.env` and fill in your actual values:
 
 ```bash
-npx degit arcanesandip/react-starter . --force
+cp .env.example .env
 ```
 
-> Update `"name"` in `package.json` and `package-lock.json` to your project name.
+> `.env` is your local file only — it holds real values and is already in `.gitignore` so it never gets committed.
 
 ## Folder structure
 
